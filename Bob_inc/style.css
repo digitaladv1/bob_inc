@@ -1,0 +1,49 @@
+.header{
+  background-color: #90C1E0;
+  text-align:center;
+  padding: 40px;
+}
+
+.header h1{
+  font-size: 99px;
+  color:#973AE0;
+}
+.header h2{
+  color:#973AE0;
+font-size: 29px;
+font-style: italic;
+
+}
+
+
+.content{
+  background-color:#9396F5;
+  padding: 20px;
+width: 50%;
+margin-left: 25%;
+
+}
+
+.content h2{
+  background-color: #25FAD1;
+  padding:20px;
+}
+
+.content ul li{
+  background-color: #25FAD1;
+  padding:10px;
+  border: 1px solid;
+  list-style-type: none;
+
+}
+
+
+#chatbox{
+  overflow: scroll;
+  height: 400px;
+}
+
+
+.games{
+  text-align: center;
+}

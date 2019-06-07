@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>bob inc</title>
+  </head>
+  <body>
+
+<div class="header">
+
+
+<h1>bob inc</h1>
+<img src="bob.gif" alt="">
+<h2>bob debate</h2>
+</div>
+
+
+<div class="content">
+<h2>welcome</h2>
+<h2 id="bobswords">Bob Debates</h2>
+<br>
+<input id=mywords type="text" name="response">
+<br>
+<button type="button" name="button" onclick="task()">Submit</button>
+
+
+<script type="text/javascript">
+////THIS IS WHERE THE JAVASCRIPT CODE SHOULD GO////
+
+function task (){
+
+var bob = document.getElementById("bobswords");
+var my_words = document.getElementById("mywords");
+
+
+
+my_words.value = my_words.value.toLowerCase();
+
+bob.innerHTML="you are weird";
+
+if (my_words.value == "hi"){
+bob.innerHTML = "hello";
+}
+if (my_words.value == "who are you"){
+bob.innerHTML = "a thing";
+}
+if (my_words.value == "are you better than me"){
+bob.innerHTML = "i am better than you";
+}
+if (my_words.value == "do you think bob is cool"){
+bob.innerHTML = "yes";
+}
+if (my_words.value == "bob is evil"){
+bob.innerHTML = "you are,not bob";
+}
+if (my_words.value == "you are mean"){
+bob.innerHTML = "no you are ";
+}
+if (my_words.value == "no"){
+bob.innerHTML = "yes";
+}
+
+if (my_words.value == "yes"){
+bob.innerHTML = "no";
+}
+
+
+if (my_words.value == "do you like bob"){
+bob.innerHTML = "yes";
+}
+if (my_words.value == "are you bob"){
+bob.innerHTML = "no you are bob";
+}
+
+my_words.value="";
+
+
+}
+
+
+
+</script>
+
+
+  <ul id="links">
+<script src="links.js" charset="utf-8"></script>
+
+  </ul>
+
+
+
+</div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="header">
+
+
+    <h1>bob inc</h1>
+    <img src="bob.gif" alt="">
+    <h2>bob chat</h2>
+    </div>
+
+
+    <div class="content">
+
+<div id="chatbox">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      <ul id="links">
+<script src="links.js" charset="utf-8"></script>
+
+      </ul>
+
+
+
+    </div>
+
+<script type="text/javascript">
+
+setInterval(chat, Math.floor(Math.random()*2300));
+
+var messages = [
+                "Hello",
+                "Nope",
+                "This is cool",
+                "I like pizza",
+                "Me too",
+                "I am taco",
+                "?",
+                "!",
+                "Whut you doin",
+                "Hi bob2",
+                "Am i a bob",
+                "Yes",
+                "Do you like fish",
+                "Did you watch the cubs today",
+                "stuff",
+                "Hi mom",
+                "I am pototo",
+                "Do you like yummy tacos"
+                ];
+
+function chat(){
+name = "bob" + Math.floor(Math.random()*10);
+msg = messages[Math.floor(Math.random()* messages.length)];
+
+chatbox = document.getElementById("chatbox");
+
+h3 = document.createElement("h3");
+text = document.createTextNode(name+":"+msg);
+h3.appendChild(text);
+chatbox.appendChild(h3);
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+  </body>
+</html>
